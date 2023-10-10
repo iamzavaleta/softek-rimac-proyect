@@ -12,6 +12,11 @@ provider:
       Resource:
         - arn:aws:dynamodb:us-west-2:252450464685:table/PeopleTable
 
+custom:
+  autoswagger:
+    typefiles: ['./src/types/people.d.ts']
+
+
 functions:
   getPeople:
     handler: src/people/PeopleRouter.getAll
@@ -26,6 +31,7 @@ functions:
       - httpApi:
           method: POST
           path: "/people"
+          bodyType: 'People'
 
   getByIdPeople:
     handler: src/people/PeopleRouter.getById
@@ -40,6 +46,7 @@ functions:
       - httpApi:
           method: PUT
           path: "/people/{id}"
+          bodyType: 'People'
 
   deletePeople:
     handler: src/people/PeopleRouter.deleteOne
@@ -65,4 +72,5 @@ resources:
           WriteCapacityUnits: 1
 
 plugins:
+  - serverless-auto-swagger
   - serverless-offline
