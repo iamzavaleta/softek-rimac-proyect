@@ -1,4 +1,4 @@
-service: project-softek-rimac
+service: softek-rimac-project
 frameworkVersion: '3'
 
 provider:
