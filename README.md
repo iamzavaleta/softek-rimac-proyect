@@ -41,11 +41,11 @@ Deploying aws-node-http-api-project to stage dev (us-east-1)
 
 endpoint: GET - https://xxxxxxxxxx.execute-api.us-east-1.amazonaws.com/
 functions:
-  getPeople: project-indra-rimac-dev-getPeople (17 MB)
-  createPeople: project-indra-rimac-dev-createPeople (17 MB)
-  getByIdPeople: project-indra-rimac-dev-getByIdPeople (17 MB)
-  updatePeople: project-indra-rimac-dev-updatePeople (17 MB)
-  deletePeople: project-indra-rimac-dev-deletePeople (17 MB)
+  getPeople: project-softek-rimac-dev-getPeople (17 MB)
+  createPeople: project-softek-rimac-dev-createPeople (17 MB)
+  getByIdPeople: project-softek-rimac-dev-getByIdPeople (17 MB)
+  updatePeople: project-softek-rimac-dev-updatePeople (17 MB)
+  deletePeople: project-softek-rimac-dev-deletePeople (17 MB)
 ```
 
 _Note_: In current form, after deployment, your API is public and can be invoked by anyone. For production deployments, you might want to configure an authorizer. For details on how to do that, refer to [http event docs](https://www.serverless.com/framework/docs/providers/aws/events/apigateway/).

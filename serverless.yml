@@ -1,4 +1,4 @@
-service: project-indra-rimac
+service: project-softek-rimac
 frameworkVersion: '3'
 
 provider:
